@@ -1,0 +1,232 @@
+/**/
+
+/*flex direction (horizontal ou verticale) peut agir sur =>
+justify-content(horizontal) -> (horinzotal ou vertical)*/
+
+body {
+    margin: 0; /*aucune marge(margin) autour de l'élément body*/
+    padding: 0;/*aucun rembourrage(paddind) dans l'élément*/
+    min-height: 100vh;/*impose une hauteur minimal de 100% de la fenêtre*/
+    display: flex;/*définition d'un conteneur flexible*/
+    flex-direction: column;/*définition de l'axe honrizontal ou vertical*/
+}
+
+header {
+    height: 100px;/*hauteur*/
+    width: 100%;/*largeur*/
+    display: flex;/*boite flexible*/
+    justify-content: space-evenly;/*définition de l'axe horisontal*/
+    align-items: center;/*alignement des éléments enfants*/
+    background-color: #139cbd;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;/*boite flexible*/
+    justify-content: space-evenly;/*définition sur l'axe horizontal*/
+    align-items: center;/*alignement des éléments enfants*/
+    background-color: #139cbd;
+}
+
+main {
+    width: 100%;
+    display: flex;/*boitS flexible*/
+    flex-direction: column;/*définition sur l'axe horizontal ou vertical*/
+    justify-content: center;/*center définition sur l'axe horizontal*/
+    align-items: center;
+    background-color: whitesmoke;
+    flex-grow: 1;/*utilise tout l'espace disponible (en évitant le header et le footer) pour éviter 
+    les déformations*/
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    display: flex;/*boite flexible*/
+    flex-direction: space-evenly;/*test:row ; définition sur l'axe honrizontal ou vertical*/
+    justify-content: center;/*définition sur l'axe horizontal*/
+    background-color: #139cbd;
+}
+
+a[href^='mailto']::before {
+    content: '📧';
+}
+
+a[href^='tel']::before {
+    content: '📞';
+}
+
+#logo {
+    height: 104px;
+    width: 100%;
+}
+
+/*
+.text1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    flex-grow: 1;
+}
+*/
+
+/**http://localhost/page_guide/guide.php**/
+
+/*boite1*/
+.contenaire1 {/*texte*/
+    display: flex;
+    font-size: 40px;
+
+}
+
+/*boite 2*/
+.contenaire2 {/*texte*/
+    display: flex;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+/*boite 3*/
+#contenaires1 {/*plusieurs contenaires*/
+    display: flex;
+    flex-direction: space-evenly;
+}
+
+/*couleur*/
+.bleu {
+    display: flex;
+    justify-content: center;
+}
+
+.rouge {
+    display: flex;
+    justify-content: center;/*définition sur l'axe horizontal*/
+}
+
+.orange {
+    display: flex;
+    margin: 20px;
+}
+
+/*lettre*/
+
+.a {
+    display:flex;
+    justify-content: center;
+}
+
+.b {
+    display:flex;
+    justify-content: center;
+}
+
+.c {
+    display:flex;
+    margin: 20px;
+}
+
+/*grand B numéroté*/
+
+.B1{
+    display: flex;
+    justify-content: center;/*alignement horizontal mise en place*/
+}
+
+.B2{
+    display: flex;
+    justify-content: center;
+}
+
+.B3{
+    display: flex;
+    margin: 20px;
+}
+
+/*grand C numéroté*/
+
+.C1{
+    display: flex;
+    justify-content: center;
+}
+
+.C2{
+    display: flex;
+    justify-content: center;
+}
+
+.C3{
+    display: flex;
+    margin: 20px;
+}
+
+/*assigner à rien pour le moment*/
+.contenaire3 {/*text*/
+    display: flex;
+    font-size: 20px;
+}
+
+.bouton1{
+    display: flex;
+    margin-top: 10px;
+}
+
+
+.fenetre_inscription {
+    display: flex;
+    height: 350px;
+    width: 180px;
+    flex-direction: column;/*définition de l'axe vertical ou horizontal*/
+    align-items: center;/*aligne les items de la boite*/
+    padding: 30px;
+    margin-top: 20px;
+    background-color: #97B2B2;
+}
+
+.fenetre_connexion {
+    display: flex;
+    height: 230px;
+    width: 180px;
+    flex-direction: column;/*définition de l'axe vertical ou horizontal*/
+    justify-content: center;/*définition de l'axe horizontal*/
+    padding: 30px;/*écartement interne entre le contenu de l'élément et ses bords*/
+    margin-top: 20px;/*marge appliqué sur le haut de l'élément visé*/
+    background-color: #97B2B2/**/
+}
+
+table {
+    border-collapse: collapse;/*Supprime les espaces entre les bordures*/
+    border: 2px solid black;/*bordures des cellules*/
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;/*espacement entres chaque lettres*/
+}
+
+/*style. légende du tableau*/
+caption {
+    caption-side: top;
+    padding: 10px;/*espacement autour de l'element*/
+    font-weight: bold;
+}
+
+thead, tfoot {
+    background-color: black;
+}
+
+th, td {
+    border: 1px solid black;/*bordures des cellules*/
+    padding: 8px 10px;/*espacement autout de l'elements*/
+}
+
+td:last-of-type {
+    text-align: center;/*centrage du texte de la derniere cellule*/
+}
+
+/*Alterne les couleurs des lignes pour le corps du tableau*/
+/*Avec "even" ont cible les lignes paires*/
+tbody > tr:nth-of-type(even) {
+    background-color: black;
+}
