@@ -1,7 +1,7 @@
 # Projet annuel rattrapage
 
 ## Description du projet
-Ce projet est un site web dynamique de gestion et de réservation d'offres de vacances en kayak sur la Loire.
+Ce projet est un **site web dynamique** de gestion et de réservation d'offres de vacances en kayak sur la Loire.
 
 ## Langages utilisés
 - HTML
