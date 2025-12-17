@@ -16,4 +16,4 @@ Ce projet est un site web dynamique de gestion et de réservation d'offres de va
 - FileZilla (FTP)
 
 ## Sommaire
-- `.gitignore` : crée pour ne pas mettre tout le contenu du dossier phpMyAdmin-5.2.1-all-languages
+- `.gitignore` : créé pour ne pas mettre tout le contenu du dossier phpMyAdmin-5.2.1-all-languages
